@@ -520,6 +520,7 @@ print ("Average Reading Score:" , average_reading_score )
 print ("Average Math Score:" , average_math_score )
 ```
 This shows our Benchmark Values.
+
     Average Reading Score 81.87784018381414
     Average Math Score 78.98537145774827
     
@@ -534,6 +535,7 @@ print ("Updated Average Reading Score:" , updated_average_reading_score )
 print ("Updated Average Math Score:" , updated_average_math_score )
 ```
 This shows our Adjusted Values.
+
     Updated Average Reading Score 81.85579580976001
     Updated Average Math Score 78.93053295099331
     
@@ -562,6 +564,7 @@ print ("Students Passing Reading Percentage:", passing_reading_percentage)
 
 ```
 BenchMark Data
+
     Students Passing Math: 29370
     Students Passing Reading: 33610 
     
@@ -589,6 +592,7 @@ print ("Updated Students Passing Reading Percentage:", updated_passing_reading_p
 #passing_reading_percentage=passing_reading_count / float(new_student_count) * 100
 ```
 Adjusted Data
+
     Students Passing Math: 28939
     Students Passing Reading: 33158 
     
@@ -610,6 +614,7 @@ print ("Passing Both Math and Reading:", overall_passing_math_reading_count)
 print ("Passing Percentage...:" ,overall_passing_percentage)
 ```
 BenchMark Data
+
     Passing Both Math and Reading 25528
     Passing Percentage... 65.17232575950983
     
@@ -631,11 +636,13 @@ print ("Updated Passing Percentage...:", updated_overall_passing_percentage)
 #overall_passing_percentage=overall_passing_math_reading_count / new_student_count * 100
 ```
 Adjusted Data
+
     Updated Passing Both Math and Reading 25105
     Updated Passing Percentage... 64.85571830840374
     
 
 BenchMark data
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -670,6 +677,7 @@ BenchMark data
 
 
 Adjusted data
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -706,6 +714,7 @@ Adjusted data
 
 
 Concated DF with both BenchMark and Adjusted Data sets
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -750,13 +759,19 @@ Concated DF with both BenchMark and Adjusted Data sets
 </table>
 </div>
 
+Looking at this DF, we can see the delta between our BenchMark data, and Adjusted data sets respectively.
+Average Math Scores only suffered .1%; while Average Reading scores remain unaffected.
 
+Passing Math schores decreased by .2%, and passing Reading scores decreased by .1%. 
+Overall Passing decreased by .3%.
 
 ##  School Summary
 
 We've completed a similar analysis here, to mirror the comparatives in a similar manner as before.
+It would seem Thomas High School decreased in .03%. 
 
 BenchMark Data
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -842,13 +857,10 @@ BenchMark Data
   </tbody>
 </table>
 </div>
-
-
-
-
 
 
 Adjusted Data
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -934,9 +946,6 @@ Adjusted Data
   </tbody>
 </table>
 </div>
-
-
-
 
 
 Unioned data set from BenchMark and Adjusted
@@ -1382,9 +1391,6 @@ Unioned data set from BenchMark and Adjusted
 </table>
 </div>
 
-
-
-
 ### Adjusted data Calculation outputs
     Number of 10th-12th graders from Thomas High School (THS): 1174
     Number of students passing math from Thomas High School (THS): 1094
@@ -1396,6 +1402,7 @@ Unioned data set from BenchMark and Adjusted
 
 
 Adjusted Data
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1611,8 +1618,6 @@ Adjusted Data
   </tbody>
 </table>
 </div>
-
-
 
 ## High and Low Performing Schools 
 
@@ -2244,14 +2249,7 @@ Adjusted Data
 
 
 
-
-
-
-
-
-
 ### Spending Summary
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -2406,8 +2404,12 @@ Adjusted Data
 </div>
 
 
+## Summary
 
+In short- the affect of T(homas) H(igh) S(chool)'s Freshman class academic fraudulance has a very low, if not insignificant affect on THS's overall performance and standing within the district. It could be argued that the greatest impact is visible when comparing the individual class (freshman in this case) against other freshman across other schools- but this is a flawed ascertion- as we took to the manual manipulation of the data, effectively scrubbing the entire freshman class based entirely on a "hunch". The proper method for this scrubbing, should have been done on a student by student basis- and use that comparative analysis to determine the overall impact of the individual students responsible for their misconduct. 
 
-```python
+Its unlikely the entire freshman class was complicit - so anything > 100% of the freshman class would only serve to decrease the overall impact in the aggregate. So as far as the comparison outlined by the Math and Reading Scores by Grade tables, these results should not be considered valid based on the reasoning above.
 
-```
+Put another way- should we consider to evaluate an aggragate metric based on individual students, we should in turn collect accurate data on individual students- else the metric will be artificially inflated and considered invalid.
+
+Though the impact was marginal- it should be noted the freshman class of THS successfully impacted all levels of analysis; Math scores by grade, Reading scores by graae, Scores by School spending, Scores by School size, Scores by School type, School Summary; In fact- we could say they've impacted the entire School District Analysis- which is precisely why we were tasked with rerunning this process to begin with.
